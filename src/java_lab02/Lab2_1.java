@@ -1,4 +1,4 @@
-package Java_Lab02;
+package java_lab02;
 
 public class Lab2_1 {
     public static void main(String[] args) {
@@ -11,9 +11,9 @@ public class Lab2_1 {
 
         if (userBMI <= 18.5) {
             System.out.println("You are Underweight");
-        } else if (18.5 < userBMI && userBMI < 24.9) {
+        } else if (userBMI < 24.9) {
             System.out.println("You are Normal weight");
-        } else if (25 < userBMI && userBMI < 29.9) {
+        } else if (userBMI < 29.9) {
             System.out.println("You are Overweight");
         } else {
             System.out.println("You are Obesity");

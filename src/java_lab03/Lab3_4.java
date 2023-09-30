@@ -1,4 +1,4 @@
-package Java_Lab03;
+package java_lab03;
 
 import java.util.Scanner;
 
@@ -7,8 +7,8 @@ public class Lab3_4 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int[] newInputArray1 = new int [5];
-        int[] newInputArray2 = new int [5];
+        int[] newInputArray1 = new int[5];
+        int[] newInputArray2 = new int[5];
 
         // User input array
         System.out.println("Input 5 values of the first array: ");
@@ -39,7 +39,7 @@ public class Lab3_4 {
         System.out.println();
 
         // Sort merge array
-        for (int i = 0; i < mergeArray.length - 1 ; i++) {
+        for (int i = 0; i < mergeArray.length - 1; i++) {
             for (int j = i + 1; j < mergeArray.length; j++) {
                 if (mergeArray[i] > mergeArray[j]) {
                     int temp = mergeArray[i];

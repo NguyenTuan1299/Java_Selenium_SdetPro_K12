@@ -1,4 +1,4 @@
-package Java_Lab03;
+package java_lab03;
 
 public class Lab3_2 {
     public static void main(String[] args) {
