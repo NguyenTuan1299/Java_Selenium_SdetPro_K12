@@ -1,4 +1,4 @@
-package SDET_Java_Task;
+package Java_Lab03;
 
 import java.util.Scanner;
 

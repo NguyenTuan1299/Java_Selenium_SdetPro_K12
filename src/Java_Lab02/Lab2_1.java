@@ -1,4 +1,4 @@
-package SDET_Java_Task;
+package Java_Lab02;
 
 public class Lab2_1 {
     public static void main(String[] args) {
