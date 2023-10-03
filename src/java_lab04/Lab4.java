@@ -95,9 +95,9 @@ public class Lab4 {
                 indexOfNum = i;
             }
         }
-        if(indexOfNum >= 0){
+        if (indexOfNum >= 0) {
             System.out.println("Index of your number is: " + indexOfNum);
-        }else {
+        } else {
             System.out.println("Your number is not in the list");
         }
     }
