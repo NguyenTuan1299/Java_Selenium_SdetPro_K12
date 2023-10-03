@@ -8,12 +8,12 @@ import java.security.SecureRandom;
 public class Lab4 {
     static int ARRAY_LENGTH = 5;
     static int MAX_VALUE = 1000;
-    static boolean isContinue = true;
 
     public static void main(String[] args) {
         List<Integer> myArray = generateRandomArray();
         printGameMenu();
         Scanner scanner = new Scanner(System.in);
+        boolean isContinue = true;
         while (isContinue) {
             System.out.println("Please choose an option in GAME MENU");
             int userOption = scanner.nextInt();
