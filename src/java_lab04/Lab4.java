@@ -85,7 +85,7 @@ public class Lab4 {
         System.out.println("The min value is: " + minValue);
     }
 
-    private static String searchNum(List<Integer> arrayList) {
+    private static void searchNum(List<Integer> arrayList) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input the number you want to search");
         int inputNum = scanner.nextInt();
@@ -95,6 +95,10 @@ public class Lab4 {
                 indexOfNum = i;
             }
         }
-        return ((indexOfNum >= 0) ? ("Index of your number is:" + indexOfNum):("Your number is not in the list"));
+        if(indexOfNum >= 0){
+            System.out.println("Index of your number is: " + indexOfNum);
+        }else {
+            System.out.println("Your number is not in the list");
+        }
     }
 }
