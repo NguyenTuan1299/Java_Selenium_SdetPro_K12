@@ -28,7 +28,7 @@ public class Lab4 {
                     printMinValue(myArray);
                     break;
                 case 4:
-                    searchNum2(myArray);
+                    searchNum(myArray);
                     break;
                 case 5:
                     isContinue = false;
@@ -85,24 +85,24 @@ public class Lab4 {
         System.out.println("The min value is: " + minValue);
     }
 
-    private static void searchNum1(List<Integer> arrayList) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please input the number you want to search");
-        int inputNum = scanner.nextInt();
-        int indexOfNum = -1;
-        for (int i = 0; i < ARRAY_LENGTH; i++) {
-            if (inputNum == arrayList.get(i)) {
-                indexOfNum = i;
-            }
-        }
-        if (indexOfNum >= 0) {
-            System.out.println("Index of your number is: " + indexOfNum);
-        } else {
-            System.out.println("Your number is not in the list");
-        }
-    }
+//    private static void searchNum(List<Integer> arrayList) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please input the number you want to search");
+//        int inputNum = scanner.nextInt();
+//        int indexOfNum = -1;
+//        for (int i = 0; i < ARRAY_LENGTH; i++) {
+//            if (inputNum == arrayList.get(i)) {
+//                indexOfNum = i;
+//            }
+//        }
+//        if (indexOfNum >= 0) {
+//            System.out.println("Index of your number is: " + indexOfNum);
+//        } else {
+//            System.out.println("Your number is not in the list");
+//        }
+//    }
 
-    private  static void searchNum2(List<Integer> arrayList){
+    private  static void searchNum(List<Integer> arrayList){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input the number you want to search");
         int inputNum = scanner.nextInt();
