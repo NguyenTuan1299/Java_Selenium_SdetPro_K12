@@ -6,8 +6,8 @@ import java.util.Scanner;
 import java.security.SecureRandom;
 
 public class Lab4 {
-    static int ARRAY_LENGTH = 5;
-    static int MAX_VALUE = 1000;
+    static final int ARRAY_LENGTH = 5;
+    static final int MAX_VALUE = 1000;
 
     public static void main(String[] args) {
         List<Integer> myArray = generateRandomArray();
@@ -28,7 +28,7 @@ public class Lab4 {
                     printMinValue(myArray);
                     break;
                 case 4:
-                    searchNum(myArray);
+                    searchNum2(myArray);
                     break;
                 case 5:
                     isContinue = false;
@@ -85,7 +85,7 @@ public class Lab4 {
         System.out.println("The min value is: " + minValue);
     }
 
-    private static void searchNum(List<Integer> arrayList) {
+    private static void searchNum1(List<Integer> arrayList) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input the number you want to search");
         int inputNum = scanner.nextInt();
@@ -100,5 +100,17 @@ public class Lab4 {
         } else {
             System.out.println("Your number is not in the list");
         }
+    }
+
+    private  static void searchNum2(List<Integer> arrayList){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please input the number you want to search");
+        int inputNum = scanner.nextInt();
+        if (arrayList.indexOf(inputNum) >= 0) {
+            System.out.println("Index of your number is: " + arrayList.indexOf(inputNum));
+        } else {
+            System.out.println("Your number is not in the list");
+        }
+
     }
 }
