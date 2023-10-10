@@ -58,11 +58,14 @@ public class Lab4 {
     }
 
     private static void printAllValue(List<Integer> arrayList) {
-        System.out.print("Your array is: ");
-        for (int i = 0; i < ARRAY_LENGTH; i++) {
-            System.out.print(arrayList.get(i) + " ");
+        System.out.println("Your array is: ");
+        for (int value : arrayList) {
+            System.out.println(value);
         }
-        System.out.println();
+//        for (int i = 0; i < ARRAY_LENGTH; i++) {
+//            System.out.print(arrayList.get(i) + " ");
+//        }
+//        System.out.println();
     }
 
     private static void printMaxValue(List<Integer> arrayList) {
