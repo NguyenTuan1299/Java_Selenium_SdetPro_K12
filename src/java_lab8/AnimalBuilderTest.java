@@ -9,8 +9,8 @@ import static java_lab8.AnimalWithBuilder.Builder;
 public class AnimalBuilderTest {
     public static void main(String[] args) {
 
-        AnimalWithBuilder cat = new Builder().setName("Cat").setSpeed(new SecureRandom().nextInt(40)).setFlyable(false).build();
-        AnimalWithBuilder lion = new Builder().setName("Lion").setSpeed(new SecureRandom().nextInt(60)).setFlyable(false).build();
+        AnimalWithBuilder cat = new Builder().setName("Cat").setSpeed(new SecureRandom().nextInt(30000)).setFlyable(false).build();
+        AnimalWithBuilder lion = new Builder().setName("Lion").setSpeed(new SecureRandom().nextInt(90)).setFlyable(false).build();
         AnimalWithBuilder eagle = new Builder().setName("Eagle").setSpeed(new SecureRandom().nextInt(80)).setFlyable(true).build();
         AnimalWithBuilder falcon = new Builder().setName("Falcon").setSpeed(new SecureRandom().nextInt(70)).setFlyable(true).build();
 
