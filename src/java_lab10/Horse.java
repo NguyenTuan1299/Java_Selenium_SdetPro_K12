@@ -5,7 +5,7 @@ import java.security.SecureRandom;
 public class Horse extends Animal{
 
     private final static int MAX_SPEED = 75;
-    Horse(){
+    public Horse(){
         this.name = "Horse";
         this.speed = setSpeed();
     }
